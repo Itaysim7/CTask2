@@ -111,10 +111,13 @@ void print(){
 	}
 }
 void exitFromAll(){
-	for(int i=0;i<numberOfMembers;i++){
-		account[0][i]=0;
-		account[1][i]=0;
-	}
+	 for(int i=0;i<numberOfMembers;i++){
+                if(account[0][i]==1){
+			account[0][i]=0;
+			account[1][i]=0;
+		}
+	 }
+
 }
 
 
